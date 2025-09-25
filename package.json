@@ -1,0 +1,17 @@
+{
+  "name": "fuseon-space-survivor",
+  "version": "1.0.0",
+  "description": "Uzay temalı hayatta kalma oyunu",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -c-1",
+    "dev": "live-server"
+  },
+  "keywords": ["game", "phaser", "space", "arcade"],
+  "author": "Fuseon Team",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  }
+}
