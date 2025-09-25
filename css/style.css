@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a0033 100%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#game-container {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 50px rgba(138, 43, 226, 0.5);
+    border: 2px solid #8a2be2;
+}
+
+#game-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#game-header h1 {
+    font-size: 2.5em;
+    background: linear-gradient(45deg, #8a2be2, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(138, 43, 226, 0.5);
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+#game-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.2em;
+}
+
+.info-item {
+    background: rgba(138, 43, 226, 0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(138, 43, 226, 0.5);
+}
+
+.info-item span:first-child {
+    color: #8a2be2;
+    font-weight: bold;
+}
+
+.info-item span:last-child {
+    color: #00ffff;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#game {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+#game-controls {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(138, 43, 226, 0.1);
+    border-radius: 10px;
+    color: #b8b8b8;
+    font-size: 0.9em;
+}
+
+/* Oyun canvas'ı için */
+canvas {
+    display: block;
+    border-radius: 10px;
+}
