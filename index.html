@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuseon Space Survivor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-header">
+            <h1>FUSEON SPACE SURVIVOR</h1>
+            <div id="game-info">
+                <div class="info-item">
+                    <span>Skor: </span>
+                    <span id="score">0</span>
+                </div>
+                <div class="info-item">
+                    <span>Can: </span>
+                    <span id="health">100</span>
+                </div>
+                <div class="info-item">
+                    <span>Dalga: </span>
+                    <span id="wave">1</span>
+                </div>
+            </div>
+        </div>
+        <div id="game"></div>
+        <div id="game-controls">
+            <p>Kontroller: WASD/Yön Tuşları = Hareket | Space/Sol Tık = Ateş | P = Duraklat</p>
+        </div>
+    </div>
+
+    <!-- Phaser.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.min.js"></script>
+    
+    <!-- Oyun Dosyaları -->
+    <script src="js/config.js"></script>
+    <script src="js/scenes/PreloadScene.js"></script>
+    <script src="js/scenes/MenuScene.js"></script>
+    <script src="js/scenes/GameScene.js"></script>
+    <script src="js/scenes/GameOverScene.js"></script>
+    <script src="js/entities/Player.js"></script>
+    <script src="js/entities/Enemy.js"></script>
+    <script src="js/entities/Asteroid.js"></script>
+    <script src="js/entities/PowerUp.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
